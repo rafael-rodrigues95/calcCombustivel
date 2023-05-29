@@ -15,7 +15,7 @@ export default props => {
             <TextInput
             style={styles.txt}
             keyboardType='numeric'
-            onChangeText={text => props.aoModificar(text)}
+            onChangeText={text => props.aoModificar(text.replace(/,/g,'.'))}
             />
         </View>
     )
